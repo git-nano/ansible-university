@@ -1,0 +1,5 @@
+proxmox_env:
+  PROXMOX_USER: "{{ lookup('env', 'PROXMOX_USER') }}"
+  PROXMOX_HOST: "{{ lookup('env', 'PROXMOX_HOST') }}"
+  PROXMOX_TOKEN_SECRET: "{{ lookup('env', 'PROXMOX_TOKEN_SECRET') }}"
+  PROXMOX_TOKEN_ID: "{{ lookup('env', 'PROXMOX_TOKEN_ID') }}"

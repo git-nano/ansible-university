@@ -1,0 +1,8 @@
+plugin: community.proxmox.proxmox
+validate_certs: false
+want_facts: true
+want_proxmox_nodes_ansible_host: true
+use_cache: true
+cache_timeout: 3600
+compose:
+  ansible_host: proxmox_ipconfig0.ip | default(proxmox_net0.ip) | ipaddr('address')
