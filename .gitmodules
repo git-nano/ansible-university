@@ -1,0 +1,3 @@
+[submodule "ansible-university-roles"]
+	path = ansible-university-roles
+	url = https://github.com/git-nano/ansible-university-roles.git
