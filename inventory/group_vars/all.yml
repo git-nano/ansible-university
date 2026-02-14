@@ -3,3 +3,8 @@ proxmox_env:
   PROXMOX_HOST: "{{ lookup('env', 'PROXMOX_HOST') }}"
   PROXMOX_TOKEN_SECRET: "{{ lookup('env', 'PROXMOX_TOKEN_SECRET') }}"
   PROXMOX_TOKEN_ID: "{{ lookup('env', 'PROXMOX_TOKEN_ID') }}"
+
+ansible_user: ansible
+ansible_user_pubkey: ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIAiCIOTdMl+wcfwbjq7Ghh3pA4vWL1QYpcyL2L9dFW/X key-for-infrastructure
+
+network_dns_domain: "{{ lookup('env', 'NETWORK_DNS_DOMAIN') }}"
